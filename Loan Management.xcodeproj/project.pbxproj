@@ -17,6 +17,9 @@
 		AAC2256E2B8DF7D0002A0FAC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2256D2B8DF7D0002A0FAC /* APIService.swift */; };
 		AAC225712B8DFB7A002A0FAC /* LoanDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC225702B8DFB7A002A0FAC /* LoanDataModel.swift */; };
 		AAC225732B8DFEAC002A0FAC /* APIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC225722B8DFEAC002A0FAC /* APIServiceTests.swift */; };
+		AAC2257B2B8E0D6A002A0FAC /* LoanListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2257A2B8E0D6A002A0FAC /* LoanListViewModel.swift */; };
+		AAC2257D2B8E0DF1002A0FAC /* LoanListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2257C2B8E0DF1002A0FAC /* LoanListView.swift */; };
+		AAC2257F2B8E3651002A0FAC /* LoanListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2257E2B8E3651002A0FAC /* LoanListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		AAC2256D2B8DF7D0002A0FAC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		AAC225702B8DFB7A002A0FAC /* LoanDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDataModel.swift; sourceTree = "<group>"; };
 		AAC225722B8DFEAC002A0FAC /* APIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTests.swift; sourceTree = "<group>"; };
+		AAC2257A2B8E0D6A002A0FAC /* LoanListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanListViewModel.swift; sourceTree = "<group>"; };
+		AAC2257C2B8E0DF1002A0FAC /* LoanListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanListView.swift; sourceTree = "<group>"; };
+		AAC2257E2B8E3651002A0FAC /* LoanListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		AAC225402B8DF52A002A0FAC /* Loan Management */ = {
 			isa = PBXGroup;
 			children = (
+				AAC225752B8E0D2F002A0FAC /* ViewModels */,
+				AAC225742B8E0D29002A0FAC /* Views */,
 				AAC2256F2B8DFB27002A0FAC /* Models */,
 				AAC2256C2B8DF7BE002A0FAC /* Helpers */,
 				AAC225412B8DF52A002A0FAC /* Loan_ManagementApp.swift */,
@@ -152,6 +160,23 @@
 				AAC225702B8DFB7A002A0FAC /* LoanDataModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AAC225742B8E0D29002A0FAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAC2257C2B8E0DF1002A0FAC /* LoanListView.swift */,
+				AAC2257E2B8E3651002A0FAC /* LoanListItem.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAC225752B8E0D2F002A0FAC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AAC2257A2B8E0D6A002A0FAC /* LoanListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC2257F2B8E3651002A0FAC /* LoanListItem.swift in Sources */,
+				AAC2257D2B8E0DF1002A0FAC /* LoanListView.swift in Sources */,
 				AAC225442B8DF52A002A0FAC /* ContentView.swift in Sources */,
+				AAC2257B2B8E0D6A002A0FAC /* LoanListViewModel.swift in Sources */,
 				AAC2256E2B8DF7D0002A0FAC /* APIService.swift in Sources */,
 				AAC225422B8DF52A002A0FAC /* Loan_ManagementApp.swift in Sources */,
 				AAC225712B8DFB7A002A0FAC /* LoanDataModel.swift in Sources */,
