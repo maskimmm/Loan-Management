@@ -14,6 +14,9 @@
 		AAC225542B8DF52B002A0FAC /* Loan_ManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC225532B8DF52B002A0FAC /* Loan_ManagementTests.swift */; };
 		AAC2255E2B8DF52B002A0FAC /* Loan_ManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2255D2B8DF52B002A0FAC /* Loan_ManagementUITests.swift */; };
 		AAC225602B8DF52B002A0FAC /* Loan_ManagementUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2255F2B8DF52B002A0FAC /* Loan_ManagementUITestsLaunchTests.swift */; };
+		AAC2256E2B8DF7D0002A0FAC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2256D2B8DF7D0002A0FAC /* APIService.swift */; };
+		AAC225712B8DFB7A002A0FAC /* LoanDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC225702B8DFB7A002A0FAC /* LoanDataModel.swift */; };
+		AAC225732B8DFEAC002A0FAC /* APIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC225722B8DFEAC002A0FAC /* APIServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		AAC225592B8DF52B002A0FAC /* Loan ManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loan ManagementUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC2255D2B8DF52B002A0FAC /* Loan_ManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan_ManagementUITests.swift; sourceTree = "<group>"; };
 		AAC2255F2B8DF52B002A0FAC /* Loan_ManagementUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan_ManagementUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AAC2256D2B8DF7D0002A0FAC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		AAC225702B8DFB7A002A0FAC /* LoanDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDataModel.swift; sourceTree = "<group>"; };
+		AAC225722B8DFEAC002A0FAC /* APIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,8 @@
 		AAC225402B8DF52A002A0FAC /* Loan Management */ = {
 			isa = PBXGroup;
 			children = (
+				AAC2256F2B8DFB27002A0FAC /* Models */,
+				AAC2256C2B8DF7BE002A0FAC /* Helpers */,
 				AAC225412B8DF52A002A0FAC /* Loan_ManagementApp.swift */,
 				AAC225432B8DF52A002A0FAC /* ContentView.swift */,
 				AAC225452B8DF52B002A0FAC /* Assets.xcassets */,
@@ -116,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				AAC225532B8DF52B002A0FAC /* Loan_ManagementTests.swift */,
+				AAC225722B8DFEAC002A0FAC /* APIServiceTests.swift */,
 			);
 			path = "Loan ManagementTests";
 			sourceTree = "<group>";
@@ -127,6 +136,22 @@
 				AAC2255F2B8DF52B002A0FAC /* Loan_ManagementUITestsLaunchTests.swift */,
 			);
 			path = "Loan ManagementUITests";
+			sourceTree = "<group>";
+		};
+		AAC2256C2B8DF7BE002A0FAC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AAC2256D2B8DF7D0002A0FAC /* APIService.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AAC2256F2B8DFB27002A0FAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAC225702B8DFB7A002A0FAC /* LoanDataModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAC225442B8DF52A002A0FAC /* ContentView.swift in Sources */,
+				AAC2256E2B8DF7D0002A0FAC /* APIService.swift in Sources */,
 				AAC225422B8DF52A002A0FAC /* Loan_ManagementApp.swift in Sources */,
+				AAC225712B8DFB7A002A0FAC /* LoanDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC225732B8DFEAC002A0FAC /* APIServiceTests.swift in Sources */,
 				AAC225542B8DF52B002A0FAC /* Loan_ManagementTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
