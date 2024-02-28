@@ -75,9 +75,8 @@ struct LoanDetailView: View {
                             .foregroundStyle(Color.secondary)
                     } else {
                         ForEach(loanData.documents, id: \.url) { document in
-                            
                             NavigationLink {
-                                
+                                LoanDocumentView(document: document)
                             } label: {
                                 Text(document.type)
                             }
