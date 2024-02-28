@@ -49,6 +49,7 @@ struct LoanListItem: View {
             Rectangle()
                 .stroke(Color(uiColor: UIColor.black))
         }
+        .background(Color(UIColor.white))
     }
 }
 

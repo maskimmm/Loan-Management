@@ -116,6 +116,7 @@ struct RepaymentSchedule: Codable, Equatable {
 }
 
 struct Installment: Codable, Equatable {
+    let id = UUID()
     let dueDate: String
     let amountDue: Int
 }

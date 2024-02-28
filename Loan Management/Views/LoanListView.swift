@@ -25,7 +25,7 @@ struct LoanListView: View {
                     ScrollView {
                         ForEach(vm.loanDatas, id: \.id) { loanData in
                             NavigationLink {
-                                
+                                LoanDetailView(loanData: loanData)
                             } label: {
                                 LoanListItem(loanData: loanData)
                                 .foregroundStyle(Color.black)
@@ -35,6 +35,7 @@ struct LoanListView: View {
                 }
             }
         }
+        .background(Color(UIColor.systemGray6))
         .navigationTitle("Loan List")
         .alert(vm.errorMessage, isPresented: $vm.isError) {
             Button {
