@@ -93,8 +93,9 @@ struct LoanDetailView: View {
 
 struct LoanDetailView_Preview: PreviewProvider {
     static var previews: some View {
-        NavigationStack {
+        NavigationView {
             LoanDetailView(loanData: LoanDataModel.sampleData[0])
         }
+        .navigationViewStyle(.stack)
     }
 }

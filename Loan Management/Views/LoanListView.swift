@@ -19,23 +19,33 @@ struct LoanListView: View {
                         .padding(.leading, 10)
                 }
             } else {
-                if vm.loanDatas.isEmpty {
+                if vm.filteredLoanDatas.isEmpty {
                     Text("No Loan Data")
                 } else {
+                    HStack {
+                        Text("Sort By")
+                        Spacer()
+                        Picker("Sort By", selection: $vm.sortType) {
+                            ForEach(SortType.allCases, id: \.rawValue) { sortType in
+                                Text(sortType.description).tag(sortType)
+                            }
+                        }
+                    }
+                    .padding(.horizontal)
                     ScrollView {
-                        ForEach(vm.loanDatas, id: \.id) { loanData in
+                        ForEach(vm.filteredLoanDatas, id: \.id) { loanData in
                             NavigationLink {
                                 LoanDetailView(loanData: loanData)
                             } label: {
                                 LoanListItem(loanData: loanData)
-                                .foregroundStyle(Color.black)
+                                    .foregroundStyle(Color(UIColor.label))
                             }
                         }
                     }
                 }
             }
         }
-        .background(Color(UIColor.systemGray6))
+        .background(Color(UIColor.secondarySystemBackground))
         .navigationTitle("Loan List")
         .alert(vm.errorMessage, isPresented: $vm.isError) {
             Button {
@@ -54,8 +64,9 @@ struct LoanListView: View {
 
 struct LoanListView_Preview: PreviewProvider {
     static var previews: some View {
-        NavigationStack {
+        NavigationView {
             LoanListView()
         }
+        .navigationViewStyle(.stack)
     }
 }

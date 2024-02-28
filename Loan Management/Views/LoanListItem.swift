@@ -44,12 +44,12 @@ struct LoanListItem: View {
             }
         }
         .padding()
-        .foregroundStyle(Color.black)
+        .foregroundStyle(Color(UIColor.label))
         .overlay {
             Rectangle()
-                .stroke(Color(uiColor: UIColor.black))
+                .stroke(Color(uiColor: UIColor.label))
         }
-        .background(Color(UIColor.white))
+        .background(Color(UIColor.systemBackground))
     }
 }
 
