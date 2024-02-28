@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AAC225422B8DF52A002A0FAC /* Loan_ManagementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC225412B8DF52A002A0FAC /* Loan_ManagementApp.swift */; };
-		AAC225442B8DF52A002A0FAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC225432B8DF52A002A0FAC /* ContentView.swift */; };
 		AAC225462B8DF52B002A0FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC225452B8DF52B002A0FAC /* Assets.xcassets */; };
 		AAC2254A2B8DF52B002A0FAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC225492B8DF52B002A0FAC /* Preview Assets.xcassets */; };
 		AAC225542B8DF52B002A0FAC /* Loan_ManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC225532B8DF52B002A0FAC /* Loan_ManagementTests.swift */; };
@@ -23,6 +22,7 @@
 		AAC225812B8EABBE002A0FAC /* LoanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC225802B8EABBE002A0FAC /* LoanDetailView.swift */; };
 		AAC225832B8EB765002A0FAC /* LoanDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC225822B8EB765002A0FAC /* LoanDocumentView.swift */; };
 		AAC225852B8EB8E4002A0FAC /* LoanDocumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC225842B8EB8E4002A0FAC /* LoanDocumentViewModel.swift */; };
+		AAC225872B8EC2E1002A0FAC /* SortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC225862B8EC2E1002A0FAC /* SortType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,6 @@
 /* Begin PBXFileReference section */
 		AAC2253E2B8DF52A002A0FAC /* Loan Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loan Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC225412B8DF52A002A0FAC /* Loan_ManagementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan_ManagementApp.swift; sourceTree = "<group>"; };
-		AAC225432B8DF52A002A0FAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAC225452B8DF52B002A0FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAC225472B8DF52B002A0FAC /* Loan_Management.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Loan_Management.entitlements; sourceTree = "<group>"; };
 		AAC225492B8DF52B002A0FAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		AAC225802B8EABBE002A0FAC /* LoanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDetailView.swift; sourceTree = "<group>"; };
 		AAC225822B8EB765002A0FAC /* LoanDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDocumentView.swift; sourceTree = "<group>"; };
 		AAC225842B8EB8E4002A0FAC /* LoanDocumentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDocumentViewModel.swift; sourceTree = "<group>"; };
+		AAC225862B8EC2E1002A0FAC /* SortType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,6 @@
 				AAC2256F2B8DFB27002A0FAC /* Models */,
 				AAC2256C2B8DF7BE002A0FAC /* Helpers */,
 				AAC225412B8DF52A002A0FAC /* Loan_ManagementApp.swift */,
-				AAC225432B8DF52A002A0FAC /* ContentView.swift */,
 				AAC225452B8DF52B002A0FAC /* Assets.xcassets */,
 				AAC225472B8DF52B002A0FAC /* Loan_Management.entitlements */,
 				AAC225482B8DF52B002A0FAC /* Preview Content */,
@@ -156,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				AAC2256D2B8DF7D0002A0FAC /* APIService.swift */,
+				AAC225862B8EC2E1002A0FAC /* SortType.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -320,9 +320,9 @@
 			files = (
 				AAC2257F2B8E3651002A0FAC /* LoanListItem.swift in Sources */,
 				AAC2257D2B8E0DF1002A0FAC /* LoanListView.swift in Sources */,
-				AAC225442B8DF52A002A0FAC /* ContentView.swift in Sources */,
 				AAC2257B2B8E0D6A002A0FAC /* LoanListViewModel.swift in Sources */,
 				AAC2256E2B8DF7D0002A0FAC /* APIService.swift in Sources */,
+				AAC225872B8EC2E1002A0FAC /* SortType.swift in Sources */,
 				AAC225832B8EB765002A0FAC /* LoanDocumentView.swift in Sources */,
 				AAC225422B8DF52A002A0FAC /* Loan_ManagementApp.swift in Sources */,
 				AAC225712B8DFB7A002A0FAC /* LoanDataModel.swift in Sources */,
@@ -492,6 +492,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Samir Loan Management";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -502,7 +504,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -510,7 +512,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maskimm.Loan-Management";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -530,6 +533,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Samir Loan Management";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -540,7 +545,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -548,7 +553,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maskimm.Loan-Management";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
