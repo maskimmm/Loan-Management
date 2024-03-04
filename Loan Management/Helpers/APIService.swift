@@ -18,19 +18,26 @@ class APIService {
         guard let url = URL(string: urlString) else { return completion(.failure(URLError(URLError.Code.badURL))) }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data, error == nil else { return completion(.failure(URLError(URLError.Code.cannotDecodeRawData))) }
+            guard let data = data, error == nil else {
+                DispatchQueue.main.async {
+                    completion(.failure(URLError(URLError.Code.cannotDecodeRawData)))
+                }
+                return
+            }
             
             var decodedData: [LoanDataModel] = [LoanDataModel]()
             
             do {
                 decodedData = try JSONDecoder().decode([LoanDataModel].self, from: data)
             } catch {
-                completion(
-                    .failure(error)
-                )
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
             }
             
-            completion(.success(decodedData))
+            DispatchQueue.main.async {
+                completion(.success(decodedData))
+            }
         }
         
         task.resume()
@@ -42,9 +49,16 @@ class APIService {
         guard let url = URL(string: urlString) else { return completion(.failure(URLError(URLError.Code.badURL))) }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data, error == nil else { return completion(.failure(URLError(URLError.Code.cannotDecodeRawData))) }
+            guard let data = data, error == nil else { 
+                DispatchQueue.main.async {
+                    completion(.failure(URLError(URLError.Code.cannotDecodeRawData)))
+                }
+                return
+            }
             
-            completion(.success(data))
+            DispatchQueue.main.async {            
+                completion(.success(data))
+            }
         }
         
         task.resume()

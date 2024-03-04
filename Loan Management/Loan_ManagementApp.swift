@@ -11,7 +11,10 @@ import SwiftUI
 struct Loan_ManagementApp: App {
     var body: some Scene {
         WindowGroup {
-            LoanListView()
+            NavigationView {            
+                LoanListView()
+            }
+            .navigationViewStyle(.stack)
         }
     }
 }
