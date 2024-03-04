@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LoanDataModel: Codable, Equatable {
+struct LoanDataModel: Equatable {
     let id: String
     let amount: Int
     let interestRate: Double
@@ -96,26 +96,26 @@ struct LoanDataModel: Codable, Equatable {
     ]
 }
 
-struct Borrower: Codable, Equatable {
+struct Borrower: Equatable {
     let id, name, email: String
     let creditScore: Int
 }
 
-struct Collateral: Codable, Equatable {
+struct Collateral: Equatable {
     let type: String
     let value: Int
 }
 
-struct Document: Codable, Equatable {
+struct Document: Equatable {
     let type: String
     let url: String
 }
 
-struct RepaymentSchedule: Codable, Equatable {
+struct RepaymentSchedule: Equatable {
     let installments: [Installment]
 }
 
-struct Installment: Codable, Equatable {
+struct Installment: Equatable {
     let id = UUID()
     let dueDate: String
     let amountDue: Int

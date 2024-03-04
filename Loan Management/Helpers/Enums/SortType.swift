@@ -5,7 +5,6 @@
 //  Created by Rifqi Alhakim Hariyantoputera on 28/02/24.
 //
 
-import Foundation
 enum SortType: String, CaseIterable {
     case nameAsc
     case nameDesc

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA22156D2B9594ED00D456B5 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA22156C2B9594ED00D456B5 /* CustomError.swift */; };
+		AA2215722B95983300D456B5 /* LoanDataModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2215712B95983300D456B5 /* LoanDataModelResponse.swift */; };
 		AAC225422B8DF52A002A0FAC /* Loan_ManagementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC225412B8DF52A002A0FAC /* Loan_ManagementApp.swift */; };
 		AAC225462B8DF52B002A0FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC225452B8DF52B002A0FAC /* Assets.xcassets */; };
 		AAC2254A2B8DF52B002A0FAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC225492B8DF52B002A0FAC /* Preview Assets.xcassets */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA22156C2B9594ED00D456B5 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		AA2215712B95983300D456B5 /* LoanDataModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDataModelResponse.swift; sourceTree = "<group>"; };
 		AAC2253E2B8DF52A002A0FAC /* Loan Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loan Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC225412B8DF52A002A0FAC /* Loan_ManagementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan_ManagementApp.swift; sourceTree = "<group>"; };
 		AAC225452B8DF52B002A0FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +94,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA22156E2B9597FB00D456B5 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AA22156F2B95980300D456B5 /* Remote */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AA22156F2B95980300D456B5 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				AA2215712B95983300D456B5 /* LoanDataModelResponse.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		AA2215732B95B0D800D456B5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AAC2256D2B8DF7D0002A0FAC /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA2215742B95B0E300D456B5 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				AAC225862B8EC2E1002A0FAC /* SortType.swift */,
+				AA22156C2B9594ED00D456B5 /* CustomError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		AAC225352B8DF52A002A0FAC = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +150,7 @@
 		AAC225402B8DF52A002A0FAC /* Loan Management */ = {
 			isa = PBXGroup;
 			children = (
+				AA22156E2B9597FB00D456B5 /* Repositories */,
 				AAC225752B8E0D2F002A0FAC /* ViewModels */,
 				AAC225742B8E0D29002A0FAC /* Views */,
 				AAC2256F2B8DFB27002A0FAC /* Models */,
@@ -154,8 +192,8 @@
 		AAC2256C2B8DF7BE002A0FAC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				AAC2256D2B8DF7D0002A0FAC /* APIService.swift */,
-				AAC225862B8EC2E1002A0FAC /* SortType.swift */,
+				AA2215742B95B0E300D456B5 /* Enums */,
+				AA2215732B95B0D800D456B5 /* Services */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -320,11 +358,13 @@
 			files = (
 				AAC2257F2B8E3651002A0FAC /* LoanListItem.swift in Sources */,
 				AAC2257D2B8E0DF1002A0FAC /* LoanListView.swift in Sources */,
+				AA2215722B95983300D456B5 /* LoanDataModelResponse.swift in Sources */,
 				AAC2257B2B8E0D6A002A0FAC /* LoanListViewModel.swift in Sources */,
 				AAC2256E2B8DF7D0002A0FAC /* APIService.swift in Sources */,
 				AAC225872B8EC2E1002A0FAC /* SortType.swift in Sources */,
 				AAC225832B8EB765002A0FAC /* LoanDocumentView.swift in Sources */,
 				AAC225422B8DF52A002A0FAC /* Loan_ManagementApp.swift in Sources */,
+				AA22156D2B9594ED00D456B5 /* CustomError.swift in Sources */,
 				AAC225712B8DFB7A002A0FAC /* LoanDataModel.swift in Sources */,
 				AAC225812B8EABBE002A0FAC /* LoanDetailView.swift in Sources */,
 				AAC225852B8EB8E4002A0FAC /* LoanDocumentViewModel.swift in Sources */,
