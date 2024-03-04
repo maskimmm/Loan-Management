@@ -1,7 +1,3 @@
-Approach
-Decision
-Additional Feature
-
 # Loan Management App
 
 ## Content
